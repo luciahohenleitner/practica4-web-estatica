@@ -21,32 +21,65 @@
     <section>
       <h2>Nuestros productos</h2>
       <p>Aquí puedes ver algunos productos disponibles en la tienda.</p>
+      <p id="estado-productos">Selecciona un producto para añadirlo al carrito.</p>
 
       <table>
-        <tr>
-          <th>Producto</th>
-          <th>Categoría</th>
-          <th>Precio</th>
-          <th>Stock</th>
-        </tr>
-        <tr>
-          <td>Zapatillas deportivas</td>
-          <td>Moda</td>
-          <td>59,99 €</td>
-          <td>12</td>
-        </tr>
-        <tr>
-          <td>Auriculares bluetooth</td>
-          <td>Tecnología</td>
-          <td>39,99 €</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td>Mochila urbana</td>
-          <td>Accesorios</td>
-          <td>29,99 €</td>
-          <td>15</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Categoría</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zapatillas deportivas</td>
+            <td>Moda</td>
+            <td>59,99 €</td>
+            <td>12</td>
+            <td>
+              <button
+                class="btn-anadir"
+                data-idarticulo="1"
+                data-descripcion="Zapatillas deportivas"
+                data-precio="59.99">
+                Añadir al carrito
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Auriculares bluetooth</td>
+            <td>Tecnología</td>
+            <td>39,99 €</td>
+            <td>8</td>
+            <td>
+              <button
+                class="btn-anadir"
+                data-idarticulo="2"
+                data-descripcion="Auriculares bluetooth"
+                data-precio="39.99">
+                Añadir al carrito
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Mochila urbana</td>
+            <td>Accesorios</td>
+            <td>29,99 €</td>
+            <td>15</td>
+            <td>
+              <button
+                class="btn-anadir"
+                data-idarticulo="3"
+                data-descripcion="Mochila urbana"
+                data-precio="29.99">
+                Añadir al carrito
+              </button>
+            </td>
+          </tr>
+        </tbody>
       </table>
     </section>
   </main>
@@ -54,5 +87,7 @@
   <footer>
     <p>© 2026 Tienda Online</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
