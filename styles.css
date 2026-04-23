@@ -99,3 +99,15 @@ footer {
   color: white;
 }
 
+#estado-productos,
+#estado-carrito {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+button:disabled {
+  background-color: #7a9bb8;
+  cursor: not-allowed;
+}
+
