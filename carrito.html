@@ -21,33 +21,33 @@
     <section>
       <h2>Resumen de compra</h2>
       <p>Estos son los productos seleccionados.</p>
+      <p id="estado-carrito">Sin actualizar</p>
+
+      <button id="boton-actualizar" type="button">Actualizar carrito</button>
 
       <table>
-        <tr>
-          <th>Producto</th>
-          <th>Cantidad</th>
-          <th>Precio</th>
-        </tr>
-        <tr>
-          <td>Zapatillas deportivas</td>
-          <td>1</td>
-          <td>59,99 €</td>
-        </tr>
-        <tr>
-          <td>Mochila urbana</td>
-          <td>2</td>
-          <td>59,98 €</td>
-        </tr>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Acción</th>
+          </tr>
+        </thead>
+        <tbody id="cuerpo-carrito">
+        </tbody>
       </table>
 
-      <p><strong>Subtotal:</strong> 119,97 €</p>
-      <p><strong>Envío:</strong> 5,00 €</p>
-      <p><strong>Total:</strong> 124,97 €</p>
+      <p><strong>Subtotal:</strong> <span id="subtotal">0.00 €</span></p>
+      <p><strong>Envío:</strong> <span id="envio">0.00 €</span></p>
+      <p><strong>Total:</strong> <span id="total">0.00 €</span></p>
     </section>
   </main>
 
   <footer>
     <p>© 2026 Tienda Online</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
